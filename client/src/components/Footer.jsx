@@ -1,4 +1,5 @@
 import React from 'react';
+import prismaslogo from '../assets/prismasfull.svg'
 
 const Footer = () => {
   return (
@@ -9,11 +10,9 @@ const Footer = () => {
           {/* Logo and Social Media Section */}
           <div className="flex flex-col space-y-6">
             <div className="flex items-center">
-              <svg className="h-10 w-10 text-purple-500" viewBox="0 0 32 32" fill="currentColor">
-                <path d="M16 4L4 12L16 20L28 12L16 4Z" />
-                <path d="M16 22L4 14V22L16 30L28 22V14L16 22Z" />
-              </svg>
-              <span className="text-white text-2xl font-bold ml-2">UNITE</span>
+              <a href="#">
+                <img src={prismaslogo} alt="Logo" className="w-40 h-auto" />
+              </a>
             </div>
             
             {/* Social Media Icons */}
@@ -77,7 +76,7 @@ const Footer = () => {
       <div className="border-t border-gray-800">
         <div className="container mx-auto px-4 py-6 flex flex-col md:flex-row justify-between items-center">
           <div className="text-gray-500 text-sm">
-            Copyright © 2024 | UNITE TECH
+            Copyright © 2025 | Prismas
           </div>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a href="#" className="text-gray-500 hover:text-white text-sm">Terms & Conditions</a>

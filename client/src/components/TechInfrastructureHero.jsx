@@ -29,30 +29,29 @@ const TechInfrastructureHero = () => {
       {/* Main content */}
       <div className="container mx-auto px-4 text-center relative z-10 max-w-3xl">
         <h1 className="text-white text-4xl md:text-5xl font-bold italic mb-4 leading-tight">
-          We Build Tech Infrastructure<br />
+          We Build Tech <span className='text-green-300'>Infrastructure</span><br />
           for the Future of Business
         </h1>
         
-        <p className="text-gray-300 text-sm mb-12">
+        <p className="text-gray-300 text-md mb-12">
           From custom web applications to advanced mobile solutions, we develop the tools that help businesses adapt and grow.
         </p>
         
         <div className="mb-2">
-          <p className="text-gray-400 text-xs mb-4">Stay in the loop:</p>
           
           <form onSubmit={handleSubmit} className="flex justify-center max-w-md mx-auto">
-            <div className="relative flex w-full max-w-sm">
+            <div className="relative flex w-full max-w-md">
               <input
                 type="email"
-                placeholder="john@gmail.com"
+                placeholder="contact@prismas.tech"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="w-full bg-transparent border border-gray-800 rounded-l px-4 py-2 text-sm text-white focus:outline-none"
+                className="w-full bg-transparent border border-green-300 rounded-l px-4 py-2 text-sm text-green-300 focus:outline-none"
                 required
               />
               <button
                 type="submit"
-                className="bg-white rounded-r px-4 py-2"
+                className="bg-green-300 rounded-r px-4 py-2"
                 aria-label="Subscribe"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -60,8 +59,7 @@ const TechInfrastructureHero = () => {
                 </svg>
               </button>
             </div>
-          </form>
-          
+          </form>          
           <p className="text-gray-600 text-xs mt-4">
             We'll never share your email address
           </p>
