@@ -17,12 +17,12 @@ function App() {
     <>
       <NavigationBar />
       <TechInfrastructureHero />
-      <CompanyLogos />
+      {/* <CompanyLogos /> */}
       <IntroductionSection />
       <HeroSectionDivOne />
       <FeatureCards />
       <FeatureTags />
-      <HeroSectionDivTwo />
+      {/* <HeroSectionDivTwo /> */}
       <Footer />
     </>
   )

@@ -44,10 +44,10 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Products</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-400 hover:text-white">Analytics</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white">Live Feed</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white">Automation</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white">Tools</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white">Home</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white">About Us</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white">Services</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white">Contact Us</a></li>
             </ul>
           </div>
 
@@ -55,8 +55,8 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Explore</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-400 hover:text-white">UNITE Pass</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white">UNITE DAO</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white">Prismas Contact 1</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white">Prismas Contact 2</a></li>
             </ul>
           </div>
 
@@ -65,8 +65,8 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Resources</h3>
             <ul className="space-y-2">
               <li><a href="#" className="text-gray-400 hover:text-white">Team</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white">Whitepaper</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white">Guides</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white">Office</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white">Mentors</a></li>
             </ul>
           </div>
         </div>

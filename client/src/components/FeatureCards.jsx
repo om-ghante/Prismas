@@ -138,17 +138,20 @@ const FeatureCards = () => {
               </div>
               <div className="relative">
                 {/* Circle avatars for collaboration */}
-                <div className="w-14 h-14 rounded-full bg-red-500 border-4 border-zinc-900 absolute right-8 top-0 flex items-center justify-center">
-                  <span className="text-white font-bold">J</span>
-                </div>
-                <div className="w-14 h-14 rounded-full bg-yellow-500 border-4 border-zinc-900 absolute right-4 top-0 flex items-center justify-center">
-                  <span className="text-white font-bold">A</span>
-                </div>
-                <div className="w-14 h-14 rounded-full bg-blue-500 border-4 border-zinc-900 absolute right-0 top-0 flex items-center justify-center">
+                <div className="w-14 h-14 rounded-full bg-red-500 border-4 border-zinc-900 absolute right-12 top-0 flex items-center justify-center">
                   <span className="text-white font-bold">S</span>
                 </div>
-                <div className="absolute right-4 top-12 bg-green-400 text-black text-xs py-1 px-3 rounded-full">
-                  Elain
+                <div className="w-14 h-14 rounded-full bg-yellow-500 border-4 border-zinc-900 absolute right-8 top-0 flex items-center justify-center">
+                  <span className="text-white font-bold">N</span>
+                </div>
+                <div className="w-14 h-14 rounded-full bg-blue-500 border-4 border-zinc-900 absolute right-4 top-0 flex items-center justify-center">
+                  <span className="text-white font-bold">S</span>
+                </div>
+                <div className="w-14 h-14 rounded-full bg-green-500 border-4 border-zinc-900 absolute right-0 top-0 flex items-center justify-center">
+                  <span className="text-white font-bold">O</span>
+                </div>
+                <div className="absolute right-4 top-12 bg-white text-black text-xs py-1 px-3 rounded-full">
+                  Prismas
                 </div>
               </div>
             </div>

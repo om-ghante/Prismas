@@ -98,13 +98,13 @@ const NavigationBar = () => {
         </div>
 
         <a href="#" className="text-green-300 font-bold hover:text-white py-2 px-2 md:px-0 md:mr-6">
-          Roadmap
+          Services
         </a>
         <a href="#" className="text-green-300 font-bold hover:text-white py-2 px-2 md:px-0 md:mr-6">
-          DAO
+          Team
         </a>
         <a href="#" className="text-green-300 font-bold hover:text-white py-2 px-2 md:px-0 md:mr-6">
-          Whitepaper
+          Contact Us
         </a>
       </div>
     </nav>

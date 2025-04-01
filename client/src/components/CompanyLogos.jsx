@@ -2,12 +2,12 @@ import React from 'react';
 
 const CompanyLogos = () => {
   const companies = [
-    { name: 'Headspace', logo: '🔘' }, // Replace with actual logo or import
-    { name: 'Shopify', logo: '🛒' },   // Replace with actual logo or import
-    { name: 'Volvo', logo: '⭕' },     // Replace with actual logo or import
-    { name: 'Mobbin', logo: '〰️' },   // Replace with actual logo or import
-    { name: 'Pinterest', logo: '📌' }, // Replace with actual logo or import
-    { name: 'Duolingo', logo: '🦉' },  // Replace with actual logo or import
+    { name: 'Headspace', logo: '🔘' }, 
+    { name: 'Shopify', logo: '🛒' },   
+    { name: 'Volvo', logo: '⭕' },     
+    { name: 'Mobbin', logo: '〰️' },   
+    { name: 'Pinterest', logo: '📌' }, 
+    { name: 'Duolingo', logo: '🦉' },  
   ];
 
   return (

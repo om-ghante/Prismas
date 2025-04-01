@@ -10,13 +10,14 @@ const HeroSectionDivOne = () => {
           <h1 className="text-4xl md:text-5xl font-bold leading-tight">
             You do the business,
             <br />
-            we'll handle the money.
+            we'll handle the Tech 
+            <br />
+            <span className='text-green-300'>Infrastructure</span>
           </h1>
           
           <p className="text-gray-400 max-w-md">
-            With the right credit card, you can improve your financial life 
-            by building credit, earning rewards and saving money. But 
-            with hundreds of credit cards on the market.
+            Ready to take your business to the next level? Explore how Prismas Tech can help you innovate,
+            grow, and succeed.
           </p>
           
           <button className="bg-green-300 hover:bg-cyan-600 text-gray-950  px-6 py-3 rounded-md font-medium transition-colors duration-200">
@@ -32,10 +33,10 @@ const HeroSectionDivOne = () => {
               <Star className="h-6 w-6 text-green-300" />
             </div>
             <div>
-              <h3 className="font-semibold text-lg mb-1">Rewards</h3>
+              <h3 className="font-semibold text-lg mb-1">Advanced Software Tools</h3>
               <p className="text-gray-400 text-sm">
-                The best credit cards offer some tantalizing 
-                combinations of promotions and prizes.
+                Streamline your workflows with our state-of-the-art software,
+                tailored to meet your unique needs.
               </p>
             </div>
           </div>
@@ -49,7 +50,7 @@ const HeroSectionDivOne = () => {
               <h3 className="font-semibold text-lg mb-1">100% Secured</h3>
               <p className="text-gray-400 text-sm">
                 We take proactive steps make sure your information 
-                and transactions are secure.
+                and data are secure.
               </p>
             </div>
           </div>
@@ -60,10 +61,10 @@ const HeroSectionDivOne = () => {
               <ArrowRight className="h-6 w-6 text-green-300" />
             </div>
             <div>
-              <h3 className="font-semibold text-lg mb-1">Balance Transfer</h3>
+              <h3 className="font-semibold text-lg mb-1">Scalable Infrastructure</h3>
               <p className="text-gray-400 text-sm">
-                A balance transfer credit card can save you a lot of 
-                money in interest charges.
+                Build and grow with confidence using our robust, future-proof tech
+                platforms.
               </p>
             </div>
           </div>

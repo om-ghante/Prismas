@@ -34,7 +34,9 @@ const TechInfrastructureHero = () => {
         </h1>
         
         <p className="text-gray-300 text-md mb-12">
-          From custom web applications to advanced mobile solutions, we develop the tools that help businesses adapt and grow.
+          At Prismas Tech, we deliver cutting-edge solutions designed to transform your business and drive
+          success in a digital world. Our mission is to simplify complex challenges with intuitive, powerful, and
+          scalable technology
         </p>
         
         <div className="mb-2">
@@ -60,7 +62,7 @@ const TechInfrastructureHero = () => {
               </button>
             </div>
           </form>          
-          <p className="text-gray-600 text-xs mt-4">
+          <p className="text-white text-xs mt-4">
             We'll never share your email address
           </p>
         </div>
