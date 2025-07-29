@@ -1,17 +1,21 @@
 import React, { useState } from 'react';
+import { Play } from 'lucide-react';
+import FloatingNodes from './FloatingNodes';
 
 const TechInfrastructureHero = () => {
   const [email, setEmail] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission logic here
     console.log('Email submitted:', email);
   };
 
   return (
-    <div className="w-full bg-black relative py-16">
-      {/* Subtle star/dot background */}
+    <div className="relative w-full h-screen overflow-hidden bg-black">
+      {/* Animated Gradient Background */}
+      <div className="absolute inset-0 animated-gradient-bg" />
+      
+      {/* Subtle star/dot background overlay */}
       <div className="absolute inset-0 overflow-hidden opacity-20">
         {Array.from({ length: 100 }).map((_, i) => (
           <div 
@@ -27,33 +31,34 @@ const TechInfrastructureHero = () => {
       </div>
       
       {/* Main content */}
-      <div className="container mx-auto px-4 text-center relative z-10 max-w-3xl">
-        <h1 className="text-white text-4xl md:text-5xl font-bold italic mb-4 leading-tight">
-          We Build Tech <span className='text-green-300'>Infrastructure</span><br />
-          for the Future of Business
-        </h1>
-        
-        <p className="text-gray-300 text-md mb-12">
-          At Prismas Tech, we deliver cutting-edge solutions designed to transform your business and drive
-          success in a digital world. Our mission is to simplify complex challenges with intuitive, powerful, and
-          scalable technology
-        </p>
-        
-        <div className="mb-2">
+      <div className="relative z-10 flex items-center justify-center h-full text-center px-4">
+        {/* Centered Content */}
+        <div className="max-w-4xl">
+          <h1 className="text-white text-4xl md:text-6xl font-bold mb-6 leading-tight">
+            We Build Tech <span className='text-green-300'>Infrastructure</span><br />
+            for the Future of Business
+          </h1>
           
-          <form onSubmit={handleSubmit} className="flex justify-center max-w-md mx-auto">
-            <div className="relative flex w-full max-w-md">
+          <p className="text-gray-300 text-lg md:text-xl mb-12 max-w-xl leading-relaxed mx-auto">
+            At Prismas Tech, we deliver cutting-edge solutions designed to transform your business and drive
+            success in a digital world. Our mission is to simplify complex challenges with intuitive, powerful, and
+            scalable technology
+          </p>
+          
+          {/* Email Form */}
+          <form onSubmit={handleSubmit} className="flex max-w-md mb-4 mx-auto">
+            <div className="relative flex w-full">
               <input
                 type="email"
                 placeholder="contact@prismas.tech"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="w-full bg-transparent border border-green-300 rounded-l px-4 py-2 text-sm text-green-300 focus:outline-none"
+                className="w-full bg-white bg-opacity-10 backdrop-blur-sm border border-green-300 rounded-l px-4 py-3 text-sm text-white placeholder-gray-300 focus:outline-none focus:bg-opacity-20"
                 required
               />
               <button
                 type="submit"
-                className="bg-green-300 rounded-r px-4 py-2"
+                className="bg-green-300 hover:bg-green-400 rounded-r px-6 py-3 transition-colors duration-300"
                 aria-label="Subscribe"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -61,11 +66,18 @@ const TechInfrastructureHero = () => {
                 </svg>
               </button>
             </div>
-          </form>          
-          <p className="text-white text-xs mt-4">
+          </form>
+          
+          <p className="text-white text-xs opacity-80">
             We'll never share your email address
           </p>
         </div>
+
+      </div>
+      
+      {/* Floating Nodes Animation */}
+      <div className="absolute inset-0 z-0">
+        <FloatingNodes />
       </div>
     </div>
   );

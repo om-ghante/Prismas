@@ -1,30 +1,22 @@
 import React from 'react';
+import savantLogo from '../assets/savant.png';
 
 const CompanyLogos = () => {
-  const companies = [
-    { name: 'Headspace', logo: '🔘' }, 
-    { name: 'Shopify', logo: '🛒' },   
-    { name: 'Volvo', logo: '⭕' },     
-    { name: 'Mobbin', logo: '〰️' },   
-    { name: 'Pinterest', logo: '📌' }, 
-    { name: 'Duolingo', logo: '🦉' },  
-  ];
+  const logos = Array(20).fill({ name: 'Savant Academy', logo: savantLogo });
 
   return (
-    <div className="w-full bg-black text-white py-16">
-      <div className="max-w-7xl mx-auto px-4">
-        <h2 className="text-center text-2xl mb-12 text-gray-200 font-light">
-          Already chosen by the leaders
-        </h2>
-        
-        <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
-          {companies.map((company) => (
-            <div key={company.name} className="flex items-center opacity-100 hover:opacity-70 cursor-pointer transition-opacity">
-              <span className="text-4xl mr-2">{company.logo}</span>
-              <span className="text-2xl font-bold text-green-300">{company.name}</span>
-            </div>
-          ))}
-        </div>
+    <div className="w-full bg-black text-white py-4 overflow-hidden">
+      <div className="flex whitespace-nowrap animate-scroll">
+        {logos.map((company, index) => (
+          <div key={index} className="inline-block mx-4">
+            <img src={company.logo} alt={`${company.name} logo`} className="h-12" />
+          </div>
+        ))}
+        {logos.map((company, index) => (
+          <div key={index + logos.length} className="inline-block mx-4">
+            <img src={company.logo} alt={`${company.name} logo`} className="h-12" />
+          </div>
+        ))}
       </div>
     </div>
   );
