@@ -53,7 +53,7 @@ const TechInfrastructureHero = () => {
                 placeholder="contact@prismas.tech"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="w-full bg-white bg-opacity-10 backdrop-blur-sm border border-green-300 rounded-l px-4 py-3 text-sm text-white placeholder-gray-500 focus:outline-none focus:bg-opacity-20"
+                className="w-full bg-white border border-green-300 rounded-l px-4 py-3 text-sm text-black placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-green-400"
                 required
               />
               <button
