@@ -1,83 +1,68 @@
 import React from 'react';
-import { Mail, Phone, MapPin, Linkedin, Twitter, Instagram, Facebook } from 'lucide-react';
+import { Mail, Phone, MapPin, Linkedin, Instagram, Facebook } from 'lucide-react';
 import logo from '../assets/prismas.svg';
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-white px-10">
-      <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-4 gap-8">
+    <footer className="bg-[#0b0b0b] text-white border-t border-gray-800">
+      <div className="container mx-auto px-4 py-4">
+        {/* Single row layout on desktop */}
+        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
 
-          {/* Column 1: Brand and Socials */}
-          <div>
-            <img src={logo} alt="Prismas Logo" className="w-24 h-24 mb-4" />
-            <p className="text-gray-400 mb-4 text-sm">
-              Empowering businesses with cutting-edge technology solutions for the digital age.
-            </p>
-            <div className="flex space-x-4">
-              <a href="https://www.linkedin.com/company/prismasco" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-green-500"><Linkedin size={20} /></a>
-              <a href="https://x.com/PrismasL80787" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-green-500"><Twitter size={20} /></a>
-              <a href="https://www.instagram.com/prismas.co/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-green-500"><Instagram size={20} /></a>
-              <a href="#" className="text-gray-400 hover:text-green-500"><Facebook size={20} /></a>
+          {/* Brand + Socials */}
+          <div className="flex items-center justify-center md:justify-start gap-4">
+            <div className="flex items-center gap-2">
+              <img src={logo} alt="Prismas" className="w-7 h-7" />
+              <span className="text-base font-semibold">Prismas</span>
+            </div>
+            <div className="flex gap-2">
+              <a href="https://www.linkedin.com/company/prismasco" target="_blank" rel="noopener noreferrer" className="w-7 h-7 bg-gray-800 hover:bg-green-500 rounded-full flex items-center justify-center transition-colors">
+                <Linkedin size={12} />
+              </a>
+              <a href="https://x.com/PrismasL80787" target="_blank" rel="noopener noreferrer" className="w-7 h-7 bg-gray-800 hover:bg-green-500 rounded-full flex items-center justify-center transition-colors text-xs font-bold">
+                𝕏
+              </a>
+              <a href="https://www.instagram.com/prismas.co/" target="_blank" rel="noopener noreferrer" className="w-7 h-7 bg-gray-800 hover:bg-green-500 rounded-full flex items-center justify-center transition-colors">
+                <Instagram size={12} />
+              </a>
+              <a href="#" className="w-7 h-7 bg-gray-800 hover:bg-green-500 rounded-full flex items-center justify-center transition-colors">
+                <Facebook size={12} />
+              </a>
             </div>
           </div>
 
-          {/* Column 2: Quick Links */}
-          <div>
-            <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
-            <ul className="space-y-2">
-              <li><a href="#home" className="text-gray-400 hover:text-white text-sm">Home</a></li>
-              <li><a href="#about" className="text-gray-400 hover:text-white text-sm">About Us</a></li>
-              <li><a href="#services" className="text-gray-400 hover:text-white text-sm">Services</a></li>
-              <li><a href="#testimonials" className="text-gray-400 hover:text-white text-sm">Testimonials</a></li>
-              <li><a href="#contact" className="text-gray-400 hover:text-white text-sm">Contact</a></li>
-            </ul>
+          {/* Contact - inline on desktop */}
+          <div className="flex flex-wrap items-center justify-center gap-4 text-xs text-gray-400">
+            <span className="flex items-center gap-1">
+              <Mail size={12} className="text-green-400" />
+              prismas.organization@gmail.com
+            </span>
+            <span className="flex items-center gap-1">
+              <Phone size={12} className="text-green-400" />
+              +91 7071472143
+            </span>
+            <span className="flex items-center gap-1">
+              <MapPin size={12} className="text-green-400" />
+              Kolhapur, MH
+            </span>
           </div>
 
-          {/* Column 3: Contact Info */}
-          <div>
-            <h3 className="text-lg font-semibold mb-4">Contact Info</h3>
-            <ul className="space-y-3">
-              <li className="flex items-center space-x-3 text-gray-400">
-                <Mail size={16} className="text-green-500" />
-                <span className="text-sm">prismas.organization@gmail.com</span>
-              </li>
-              <li className="flex items-center space-x-3 text-gray-400">
-                <Phone size={16} className="text-green-500" />
-                <span className="text-sm">+91 7071472143</span>
-              </li>
-              <li className="flex items-start space-x-3 text-gray-400">
-                <MapPin size={16} className="text-green-500 mt-1" />
-                <span className="text-sm">139/B,Bondrenagar,Kolhapur</span>
-              </li>
-            </ul>
-          </div>
-
-          {/* Column 4: Subscribe */}
-          <div>
-            <h3 className="text-lg font-semibold mb-4">Subscribe</h3>
-            <p className="text-gray-400 mb-4 text-sm">Stay updated with our latest news and offers.</p>
-            <form className="flex">
-              <input
-                type="email"
-                placeholder="Your email"
-                className="bg-gray-800 border border-gray-700 rounded-l-md px-4 py-2 w-full text-sm text-white focus:outline-none focus:border-green-500"
-              />
-              <button
-                type="submit"
-                className="bg-green-500 text-black font-semibold px-4 py-2 rounded-r-md hover:bg-green-600 text-sm"
-              >
-                Subscribe
-              </button>
-            </form>
-          </div>
+          {/* Newsletter - compact */}
+          <form className="flex items-center justify-center md:justify-end gap-2">
+            <input
+              type="email"
+              placeholder="Email"
+              className="w-36 bg-gray-800 border border-gray-700 rounded px-3 py-1.5 text-xs text-white placeholder-gray-500 focus:outline-none focus:border-green-500"
+            />
+            <button type="submit" className="bg-green-500 hover:bg-green-400 text-black font-medium px-3 py-1.5 rounded text-xs">
+              Subscribe
+            </button>
+          </form>
 
         </div>
-      </div>
 
-      {/* Bottom Bar */}
-      <div className="border-t border-gray-800">
-        <div className="container mx-auto px-4 py-4 text-center text-gray-500 text-sm">
+        {/* Copyright */}
+        <div className="text-center md:text-right text-gray-500 text-xs mt-3 pt-3 border-t border-gray-800">
           © 2025 Prismas. All rights reserved.
         </div>
       </div>
