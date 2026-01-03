@@ -35,3 +35,32 @@ body {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+/* Responsive navbar */
+/* Mobile: Show hamburger button, hide desktop nav */
+.desktop-nav {
+  display: none;
+}
+
+.mobile-menu-btn {
+  display: block;
+}
+
+.mobile-dropdown {
+  display: block;
+}
+
+/* Desktop: Show nav links, hide hamburger button */
+@media (min-width: 768px) {
+  .desktop-nav {
+    display: flex;
+  }
+
+  .mobile-menu-btn {
+    display: none;
+  }
+
+  .mobile-dropdown {
+    display: none;
+  }
+}
