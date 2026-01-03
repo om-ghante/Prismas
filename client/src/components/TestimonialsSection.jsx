@@ -5,22 +5,22 @@ const TestimonialsSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const testimonials = [
     {
-      name: "Sarah Johnson",
-      position: "CEO, TechStart",
+      name: "Shruti Deshmukh",
+      position: "CEO, TechVentures India",
       text: "Prismas transformed how our team works. We've increased productivity by 250% and our project delivery time has improved dramatically.",
-      avatar: "SJ"
+      avatar: "SD"
     },
     {
-      name: "Michael Chen",
-      position: "CTO, InnovateCorp",
+      name: "Aditya Kulkarni",
+      position: "CTO, InnovateTech",
       text: "The AI automation features are game-changing. Tasks that used to take hours now happen automatically. It's like having an extra team member.",
-      avatar: "MC"
+      avatar: "AK"
     },
     {
-      name: "Emily Rodriguez",
-      position: "PM, DesignStudio",
+      name: "Manasi Patil",
+      position: "PM, DesignLabs",
       text: "Best project management tool we've ever used. The interface is intuitive and the collaboration features keep our remote team perfectly synchronized.",
-      avatar: "ER"
+      avatar: "MP"
     },
   ];
   const timeoutRef = useRef(null);
@@ -63,7 +63,7 @@ const TestimonialsSection = () => {
         </div>
 
         {/* Testimonials Slider */}
-        <div 
+        <div
           className="relative max-w-4xl mx-auto"
           onMouseEnter={() => resetTimeout()}
           onMouseLeave={() => {
@@ -77,7 +77,7 @@ const TestimonialsSection = () => {
           }}
         >
           <div className="overflow-hidden">
-            <div 
+            <div
               className="flex transition-transform duration-500 ease-in-out"
               style={{ transform: `translateX(-${currentIndex * 100}%)` }}
             >
@@ -103,13 +103,13 @@ const TestimonialsSection = () => {
           </div>
 
           {/* Navigation Buttons */}
-          <button 
+          <button
             onClick={handlePrev}
             className="absolute top-1/2 -left-4 md:-left-12 transform -translate-y-1/2 bg-gray-800/50 hover:bg-gray-700/50 rounded-full p-2 transition-colors"
           >
             <ChevronLeft className="w-6 h-6 text-white" />
           </button>
-          <button 
+          <button
             onClick={handleNext}
             className="absolute top-1/2 -right-4 md:-right-12 transform -translate-y-1/2 bg-gray-800/50 hover:bg-gray-700/50 rounded-full p-2 transition-colors"
           >

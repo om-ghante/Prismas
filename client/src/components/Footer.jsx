@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className="bg-black text-white px-10">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-4 gap-8">
-          
+
           {/* Column 1: Brand and Socials */}
           <div>
             <img src={logo} alt="Prismas Logo" className="w-24 h-24 mb-4" />
@@ -58,13 +58,13 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Subscribe</h3>
             <p className="text-gray-400 mb-4 text-sm">Stay updated with our latest news and offers.</p>
             <form className="flex">
-              <input 
-                type="email" 
-                placeholder="Your email" 
+              <input
+                type="email"
+                placeholder="Your email"
                 className="bg-gray-800 border border-gray-700 rounded-l-md px-4 py-2 w-full text-sm text-white focus:outline-none focus:border-green-500"
               />
-              <button 
-                type="submit" 
+              <button
+                type="submit"
                 className="bg-green-500 text-black font-semibold px-4 py-2 rounded-r-md hover:bg-green-600 text-sm"
               >
                 Subscribe

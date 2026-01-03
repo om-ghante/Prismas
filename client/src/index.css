@@ -7,3 +7,18 @@ html {
 body {
   background-color: #000;
 }
+
+/* Logo scroll animation - moves left to right */
+@keyframes scroll {
+  0% {
+    transform: translateX(-50%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 30s linear infinite;
+}

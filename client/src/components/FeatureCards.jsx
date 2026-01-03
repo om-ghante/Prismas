@@ -55,7 +55,7 @@ const FeatureCards = () => {
         {/* Features Grid */}
         <div className="grid grid-cols-3 gap-8 max-w-7xl mx-auto">
           {features.map((feature, index) => (
-            <div 
+            <div
               key={index}
               className="bg-[#121212] border border-green-500/20 rounded-2xl p-8 flex flex-col"
             >
