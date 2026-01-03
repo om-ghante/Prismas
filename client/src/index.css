@@ -22,3 +22,16 @@ body {
 .animate-scroll {
   animation: scroll 30s linear infinite;
 }
+
+/* Responsive feature cards grid */
+.feature-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .feature-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
